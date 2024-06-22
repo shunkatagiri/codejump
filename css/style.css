@@ -2,68 +2,88 @@
   width: 100%;
   object-fit: cover;
   object-position: center top;
-  margin-bottom: 80px; }
-  .mainvisual__image {
+  margin-bottom: 80px;
+
+  &__image {
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    object-position: center top; }
+    object-position: center top;
+  }
+}
 
 .gallery {
   display: flex;
   padding: 0;
   list-style: none;
   justify-content: space-between;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
   @media (max-width: 768px) {
-    .gallery {
-      flex-direction: column; } }
-  .gallery__item {
+    flex-direction: column;
+  }
+
+  &__item {
     width: calc(100% / 3 - 10px);
-    margin: 5px; }
+    margin: 5px;
     @media (max-width: 768px) {
-      .gallery__item {
-        width: 100%; } }
-  .gallery__image {
+      width: 100%;
+    }
+  }
+
+  &__image {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+  }
+}
 
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
 .site-title {
   text-align: center;
-  margin-bottom: 80px; }
-  .site-title .center-content {
-    text-align: center; }
-  .site-title .site-title__title {
+  margin-bottom: 80px;
+
+  .center-content {
+    text-align: center;
+  }
+
+  .site-title__title {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  }
+}
 
 .footer {
   font-size: 0.75rem;
   padding: 20px;
-  text-align: center; }
-  .footer__links {
+  text-align: center;
+
+  &__links {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    text-decoration: underline; }
-  .footer__link {
-    margin: 0 10px; }
+    text-decoration: underline;
+  }
+
+  &__link {
+    margin: 0 10px;
+  }
+}
 
 .back-button {
   margin-bottom: 80px;
   text-align: center;
-  padding: 0 20px; }
-  .back-button .btn {
+  padding: 0 20px;
+
+  .btn {
     display: inline-block;
     border: solid 1px #2b2a27;
     font-size: 0.875rem;
     padding: 18px 60px;
-    text-decoration: none; }
-
-/*# sourceMappingURL=style.css.map */
+    text-decoration: none;
+  }
+}
